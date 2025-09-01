@@ -1,0 +1,39 @@
+# eda-backend/.dockerignore
+
+# Ignore Python virtual environment
+venv/
+.venv/
+
+# Ignore Python cache directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore editor/IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore environment variables file (should be mounted or passed at runtime)
+.env
+
+# Ignore git specific files
+.git/
+.gitignore
+
+# Ignore any local database files if you were using SQLite or similar
+*.db
+*.sqlite3
+
+# Ignore temporary files or logs
+*.log
+tmp/
+temp/
+
+# Ignore uploaded files if they are generated during runtime and not part of the build
+# If you have initial files in uploads/project-files that need to be part of the image,
+# you might need to adjust this or copy them explicitly.
+# For now, assuming uploads/project-files is primarily for runtime generated content.
+uploads/project-files/

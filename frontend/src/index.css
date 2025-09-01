@@ -1,0 +1,62 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* Ensure a global background color for consistency */
+  background-color: #0d0d12;
+  color: #e0e0e0;
+}
+
+/* Add the subtle dots background pattern for reusability if desired */
+.bg-dots-pattern {
+    background-image: radial-gradient(rgba(51, 51, 69, 0.2) 1px, transparent 1px);
+    background-size: 25px 25px; /* Adjust size as needed */
+}
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom body font and background */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0f1b;
+    color: #f5f5f5;
+}
+
+/* Fade-in animation */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button hover animation */
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* ServiceCard hover */
+.service-card:hover {
+    background: linear-gradient(135deg, #6b21a8, #9333ea);
+    transform: translateY(-4px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Contact form input focus */
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #271c32;
+}
+
+/* Footer links hover */
+footer a:hover {
+    color: #000000;
+}
